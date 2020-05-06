@@ -90,7 +90,7 @@ local themes = {
 local chosen_theme = themes[2]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "termite"
+local terminal     = "terminator"
 local vi_focus     = false -- vi-like client focus - https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true -- cycle trough all previous client or just the first -- https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "vim"
@@ -555,8 +555,8 @@ globalkeys = my_table.join(
     --awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
     --         {description = "run prompt", group = "launcher"}),
     -- rofi prompt
-    awful.key({modkey}, "r", function () os.execute("rofi -show run") end),
-
+    awful.key({modkey}, "r", function () os.execute("rofi -show run") end)
+    --[[
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run {

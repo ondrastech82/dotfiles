@@ -27,3 +27,5 @@ Shortcut for switch is **CTRL + modkey + 'M'**
 ### rofi (run prompt)
 I use this [rofi](https://github.com/davatorium/rofi) with [unofficial nord theme](https://github.com/undiabler/nord-rofi-theme) 
 To install rofi run `sudo pacman -S rofi`
+
+For terminator nord theme, there must be added dir colors for it to work

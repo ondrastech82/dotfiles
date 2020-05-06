@@ -1,0 +1,41 @@
+[global_config]
+  title_transmit_fg_color = "#2E3440"
+  title_transmit_bg_color = "#88C0D0"
+  title_receive_fg_color = "#2E3440"
+  title_receive_bg_color = "#8FBCBB"
+  title_inactive_fg_color = "#D8DEE9"
+  title_inactive_bg_color = "#4C566A"
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.64
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+  [[nord]]
+    background_color = "#2e3440"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_color = "#D8DEE9"
+    foreground_color = "#d8dee9"
+    scrollbar_position = hidden
+    palette = "#3b4252:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#88c0d0:#e5e9f0:#4c566a:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#8fbcbb:#eceff4"
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 970:38
+      maximised = False
+      fullscreen = False
+      size = 928, 1004
+      title = stechon@manjaro:~
+      last_active_term = dc581171-44e5-46df-a5e4-513b5dd116f1
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = nord
+      uuid = dc581171-44e5-46df-a5e4-513b5dd116f1
+[plugins]
