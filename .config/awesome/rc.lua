@@ -785,7 +785,9 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- https://github.com/lcpz/awesome-copycats/issues/251
 -- }}}
 -- Autostart apps
-awful.spawn.with_shell("compton")
+-- picom compositor -> experminetal-backends == blur (without is on blur)
+-- download here https://aur.archlinux.org/packages/picom-tryone-git/
+awful.spawn.with_shell("picom --experimental-backends")
 -- Keyboard map indicator and changer
 kbdcfg = {}
 kbdcfg.cmd = "setxkbmap"
