@@ -18,9 +18,9 @@ Stolen from subreddit [r/MinimalWallpaper](https://www.reddit.com/r/MinimalWallp
 ### The cool prompt for shell
 [Powerline shell](https://github.com/b-ryan/powerline-shell)  
 To install powerline shell run `pip install powerline-shell`
-### Compton (compositor)
-My compositor of choice install by  
-`sudo pacman -S compton`
+### Picom tryone(compositor)
+My compositor of choice install from aur
+`https://aur.archlinux.org/packages/picom-tryone-git/`
 ### Second monitor
 I use the [xrandr solution](https://awesomewm.org/recipes/xrandr/)  
 Shortcut for switch is **CTRL + modkey + 'M'**
