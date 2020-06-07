@@ -150,3 +150,5 @@ fi
  export EDITOR=vim;
 # aliases
  alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"
+ alias py="python3"
+ bash .config/pfetch.sh
