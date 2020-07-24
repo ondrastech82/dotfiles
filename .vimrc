@@ -15,3 +15,13 @@ set relativenumber
 "maybe after tweaking the green color
 "colorscheme murphy
 "colorscheme nord
+
+" for default indnet to be 4 spaces
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
