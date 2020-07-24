@@ -1,6 +1,4 @@
--- TODO make better wibar
--- TODO add more widgets (look for them in copycats; can be put inside theme.lua)
--- TODO add space/ padding between tasklist and taglist
+-- TODO battery widget
 -- sources
 -- volume control https://github.com/deficient/volume-control
 
@@ -26,6 +24,8 @@ local lain = require("lain")
 local xrandr = require("xrandr")
 -- volume control
 local volume_control = require("volume-control")
+-- Battery widget
+local batteryarc_widget = require("batteryarc-widget.batteryarc")
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -366,6 +366,13 @@ awful.screen.connect_for_each_screen(function(s)
 
     }
 
+    -- batter widget
+    batterywidget = batteryarc_widget({ 
+        show_current_level = true,
+        arc_thickness = 3, 
+        font = "inconsolata bold 8",
+        size = 24,
+    })
     -- bar upper menu
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s, bg = gears.color.transparent })
@@ -385,6 +392,8 @@ awful.screen.connect_for_each_screen(function(s)
         },
         s.stolentasklist, -- Middle widget
         { -- Right widgets
+            batterywidget,
+            space,
             volumecfg.widget,
             layout = wibox.layout.fixed.horizontal,
             mykeyboardlayout,
