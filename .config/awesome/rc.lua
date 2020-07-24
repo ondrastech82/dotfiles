@@ -1,4 +1,5 @@
--- TODO battery widget
+-- TODO remap hjkl for moreintuitive use
+-- TODO get a better time, date widget
 -- sources
 -- volume control https://github.com/deficient/volume-control
 
