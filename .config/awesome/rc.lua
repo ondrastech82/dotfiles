@@ -1,4 +1,6 @@
+-- TODO edit compositor config file
 -- TODO remap hjkl for moreintuitive use
+-- TODO add internet widget
 -- TODO get a better time, date widget
 -- sources
 -- volume control https://github.com/deficient/volume-control
@@ -540,9 +542,14 @@ globalkeys = gears.table.join(
                   }
               end,
               {description = "lua execute prompt", group = "awesome"}),
+    --[[
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"})
+    --]]
+
+    -- rofi prompt
+    awful.key({modkey}, "p", function () os.execute("rofi -show run") end)
 )
 
 clientkeys = gears.table.join(
@@ -799,6 +806,6 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Autostart apps
--- picom compositor -> experminetal-backends == blur (without is on blur)
+-- picom compositor -> experminetal-backends == blur (without is no blur)
 -- download here https://aur.archlinux.org/packages/picom-tryone-git/
-awful.spawn.with_shell("picom --experimental-backends")
+awful.spawn.with_shell("picom &")
