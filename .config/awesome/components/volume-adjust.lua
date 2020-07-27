@@ -44,7 +44,7 @@ local volume_bar = wibox.widget{
    shape = gears.shape.rounded_bar,
    color = "#efefef",
    background_color = beautiful.bg_focus,
-   max_value = 100,
+   max_value = 1,
    value = 0
 }
 
@@ -83,7 +83,8 @@ awesome.connect_signal("volume_change",
       awful.spawn.easy_async_with_shell(
          "amixer sget Master | grep 'Right:' | awk -F '[][]' '{print $2}'| sed 's/[^0-9]//g'",
          function(stdout)
-            volume_bar.value = stdout
+            -- stdout works
+            volume_bar.value = stdout / 100
          end,
          false
       )
