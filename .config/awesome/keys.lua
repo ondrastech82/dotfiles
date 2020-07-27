@@ -304,19 +304,36 @@ keys.globalkeys = gears.table.join(
         end,
         {description = "focus up", group = "client"}
     ),
+
     awful.key({ modkey }, "h",
         function()
-            awful.client.focus.bydirection("left")
+            awful.client.focus.global_bydirection("left")
             if client.focus then client.focus:raise() end
         end,
         {description = "focus left", group = "client"}
     ),
+
     awful.key({ modkey }, "l",
         function()
-            awful.client.focus.bydirection("right")
+            awful.client.focus.global_bydirection("right")
             if client.focus then client.focus:raise() end
         end,
         {description = "focus right", group = "client"}
+    ),
+
+    -- Layout manipulation
+    awful.key({ modkey, "Shift"   }, "j", 
+        function () 
+            awful.client.swap.byidx(  1)
+        end,
+        {description = "swap with next client by index", group = "client"}
+    ),
+
+    awful.key({ modkey, "Shift"   }, "k", 
+        function ()
+            awful.client.swap.byidx( -1)
+        end,
+        {description = "swap with previous client by index", group = "client"}
     ),
 
     -- Focus client by direction (arrow keys)
