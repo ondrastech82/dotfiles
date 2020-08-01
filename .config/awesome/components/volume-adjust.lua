@@ -84,7 +84,7 @@ awesome.connect_signal("volume_change",
          "amixer sget Master | grep 'Right:' | awk -F '[][]' '{print $2}'| sed 's/[^0-9]//g'",
          function(stdout)
             -- stdout works
-            volume_bar.value = stdout / 100
+            volume_bar.value = tonumber(stdout) / 100
          end,
          false
       )
