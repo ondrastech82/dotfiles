@@ -39,7 +39,7 @@ local tags = require("tags")
 
 
 -- Import components
-require("components.wallpaper")
+-- require("components.wallpaper")
 require("components.exit-screen")
 require("components.volume-adjust")
 
@@ -140,3 +140,5 @@ awful.spawn.with_shell("blueman-applet")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("xfce4-power-manager --restart")
 awful.spawn.with_shell("numlockx")
+-- background wallpaper
+awful.spawn.with_shell("feh --bg-fill ~/.config/awesome/wallpaper/wallpaper-nature.jpg")
