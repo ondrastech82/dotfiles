@@ -172,13 +172,6 @@ keys.globalkeys = gears.table.join(
         end,
         {description = "open file manager", group = "launcher"}
     ),
-    -- launch discord
-    awful.key({ modkey }, "d",
-        function() 
-            awful.spawn.with_shell("~/Apps/Discord/Discord")
-        end,
-        {description = "open discord", group = "launcher"}
-    ),
     
     -- dual monitors
     awful.key({ modkey, "Control" }, "m", 
