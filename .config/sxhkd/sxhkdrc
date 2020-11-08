@@ -10,7 +10,6 @@
 # https://github.com/baskerville/bspwm
 
 
-# TODO make work function keys (for brigthness and volume)
 
 # WM INDEPENDENT KEYBINDINGS
 
@@ -22,7 +21,7 @@ super + Escape
 # BSPWM HOTKEYS
 
 # quit/restart bspwm
-super + shift + {q,r}
+super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
@@ -55,6 +54,9 @@ super + ctrl + {m,x,y,z}
 
 # FOCUS/SWAP
 
+# rotate window tree
+super + {_, shift} r
+    bspc node @/ -C {forward,backward}
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
@@ -159,4 +161,4 @@ super + e
     terminator --command nvim
 # launch menu
 super + d
-    rofi -modi run,drun -show drun -location 7 -xoffset 14 -yoffset -52 -line-padding 4 -columns 1 -lines 16 -padding 25 -hide-scrollbar -show-icons -drun-icon-theme
+   dmenu_run -l 16 

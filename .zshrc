@@ -19,6 +19,10 @@ export ZSH="/home/stechon/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="half-life"
 
+
+# Vi mode
+source ~/.zsh-plugins/vi-mode.zsh
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -103,6 +107,8 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+# scripts file path
+export PATH="$HOME/scripts:$PATH"
 
 # ALIASES
 [ -f "/home/stechon/.ghcup/env" ] && source "/home/stechon/.ghcup/env" # ghcup-env
@@ -111,8 +117,8 @@ export DENO_INSTALL="/home/stechon/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 # Rust
 source $HOME/.cargo/env
-# it works but clippy is broken in emacs
-# export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library"
+# rust path
+export RUST_SRC_PATH="$HOME/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library"
    
 
 alias py="python3"
@@ -126,6 +132,8 @@ alias corona="curl 'https://corona-stats.online/CZ/?minimal=false'"
 alias weather="curl http://wttr.in/prague"
 alias rickroll="curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash"
 
+# swallow apps
+alias zathura="devour zathura"
 # system stuff
 alias ssn="sudo shutdown now"
 alias cp="cp -i"                                                # Confirm before overwriting something
