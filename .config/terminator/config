@@ -3,6 +3,14 @@
   scroll_tabbar = True
   title_transmit_bg_color = "#d30102"
 [keybindings]
+  go_up = <Alt>k
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
+  split_horiz = <Super>Return
+  split_vert = <Shift><Super>Return
+  close_term = <Shift><Super>w
+  close_window = <Shift><Super>q
 [profiles]
   [[default]]
     background_color = "#282828"
@@ -16,9 +24,9 @@
     background_color = "#282828"
     cursor_color = "#7c6f64"
     foreground_color = "#ebdbb2"
-    palette = "#181818:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#ebdbb2:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
     show_titlebar = False
     scrollbar_position = hidden
+    palette = "#181818:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#ebdbb2:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
   [[gruvbox-light]]
     background_color = "#eee8d5"
     cursor_color = "#002b36"

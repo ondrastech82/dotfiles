@@ -21,7 +21,7 @@ ZSH_THEME="half-life"
 
 
 # Vi mode
-source ~/.zsh-plugins/vi-mode.zsh
+# source ~/.zsh-plugins/vi-mode.zsh
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load

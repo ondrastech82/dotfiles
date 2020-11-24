@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://openbox.org/">
+  <menu id="root-menu" label="Applications">
+    <item label="Terminal"><action name="Execute"><command><![CDATA[terminator]]></command></action></item>
+    <item label="Web Browser"><action name="Execute"><command><![CDATA[xdg-open http://]]></command></action></item>
+    <item label="File Manager"><action name="Execute"><command><![CDATA[xdg-open .]]></command></action></item>
+    <item label="Run command"><action name="Execute"><command><![CDATA[gmrun]]></command></action></item>
+  <separator label="Categories"/>
+  <menu id="0.174442760952846" label="Accessories">
+    <item label="About Xfce"><action name="Execute"><command><![CDATA[xfce4-about]]></command></action></item>
+    <item label="Application Finder"><action name="Execute"><command><![CDATA[xfce4-appfinder]]></command></action></item>
+    <item label="Bulk Rename"><action name="Execute"><command><![CDATA[/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename]]></command></action></item>
+    <item label="Clipman"><action name="Execute"><command><![CDATA[xfce4-clipman]]></command></action></item>
+    <item label="compton"><action name="Execute"><command><![CDATA[compton]]></command></action></item>
+    <item label="Fcitx"><action name="Execute"><command><![CDATA[fcitx]]></command></action></item>
+    <item label="File Manager PCManFM"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
+    <item label="File Manager"><action name="Execute"><command><![CDATA[exo-open --launch FileManager]]></command></action></item>
+    <item label="Mousepad"><action name="Execute"><command><![CDATA[mousepad]]></command></action></item>
+    <item label="Multilingual Terminal"><action name="Execute"><command><![CDATA[mlterm]]></command></action></item>
+    <item label="Neovim"><action name="Execute"><command><![CDATA[xterm -e 'nvim']]></command></action></item>
+    <item label="nitrogen"><action name="Execute"><command><![CDATA[nitrogen]]></command></action></item>
+    <item label="Notes"><action name="Execute"><command><![CDATA[xfce4-notes]]></command></action></item>
+    <item label="Run Program..."><action name="Execute"><command><![CDATA[xfce4-appfinder --collapsed]]></command></action></item>
+    <item label="Screenshot"><action name="Execute"><command><![CDATA[xfce4-screenshooter]]></command></action></item>
+    <item label="Sensor Viewer"><action name="Execute"><command><![CDATA[xfce4-sensors]]></command></action></item>
+    <item label="Task Manager"><action name="Execute"><command><![CDATA[xfce4-taskmanager]]></command></action></item>
+    <item label="Terminal Emulator"><action name="Execute"><command><![CDATA[exo-open --launch TerminalEmulator]]></command></action></item>
+    <item label="Terminator"><action name="Execute"><command><![CDATA[terminator]]></command></action></item>
+    <item label="Thai X terminal"><action name="Execute"><command><![CDATA[txiterm -ls -cursorColor yellow -cursorColorThai red -bg black -fg white]]></command></action></item>
+    <item label="Thunar File Manager"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+    <item label="Vim"><action name="Execute"><command><![CDATA[xterm -e 'vim']]></command></action></item>
+    <item label="Xarchiver"><action name="Execute"><command><![CDATA[xarchiver]]></command></action></item>
+    <item label="Xfburn"><action name="Execute"><command><![CDATA[xfburn]]></command></action></item>
+  </menu>
+  <menu id="0.44222382511677" label="Education">
+    <item label="GoldenDict"><action name="Execute"><command><![CDATA[goldendict]]></command></action></item>
+    <item label="LibreOffice Math"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+  </menu>
+  <menu id="0.127562590447393" label="Graphics">
+    <item label="LibreOffice Draw"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+    <item label="Ristretto Image Viewer"><action name="Execute"><command><![CDATA[ristretto]]></command></action></item>
+    <item label="XSane"><action name="Execute"><command><![CDATA[xsane]]></command></action></item>
+  </menu>
+  <menu id="0.534646014540108" label="Multimedia">
+    <item label="Ex Falso"><action name="Execute"><command><![CDATA[exfalso]]></command></action></item>
+    <item label="Parole Media Player"><action name="Execute"><command><![CDATA[parole]]></command></action></item>
+    <item label="PulseAudio Volume Control"><action name="Execute"><command><![CDATA[pavucontrol]]></command></action></item>
+    <item label="Quod Libet"><action name="Execute"><command><![CDATA[quodlibet --run --play-file]]></command></action></item>
+    <item label="Xfburn"><action name="Execute"><command><![CDATA[xfburn]]></command></action></item>
+  </menu>
+  <menu id="0.235812781041279" label="Network">
+    <item label="Brave Web Browser"><action name="Execute"><command><![CDATA[/usr/bin/brave-browser-stable]]></command></action></item>
+    <item label="Firefox ESR"><action name="Execute"><command><![CDATA[/usr/lib/firefox-esr/firefox-esr]]></command></action></item>
+    <item label="Mail Reader"><action name="Execute"><command><![CDATA[exo-open --launch MailReader]]></command></action></item>
+    <item label="Web Browser"><action name="Execute"><command><![CDATA[exo-open --launch WebBrowser]]></command></action></item>
+  </menu>
+  <menu id="0.356406574821435" label="Office">
+    <item label="Atril Document Viewer"><action name="Execute"><command><![CDATA[atril]]></command></action></item>
+    <item label="Dictionary"><action name="Execute"><command><![CDATA[xfce4-dict]]></command></action></item>
+    <item label="GoldenDict"><action name="Execute"><command><![CDATA[goldendict]]></command></action></item>
+    <item label="LibreOffice Base"><action name="Execute"><command><![CDATA[libreoffice --base]]></command></action></item>
+    <item label="LibreOffice Calc"><action name="Execute"><command><![CDATA[libreoffice --calc]]></command></action></item>
+    <item label="LibreOffice Draw"><action name="Execute"><command><![CDATA[libreoffice --draw]]></command></action></item>
+    <item label="LibreOffice Impress"><action name="Execute"><command><![CDATA[libreoffice --impress]]></command></action></item>
+    <item label="LibreOffice Math"><action name="Execute"><command><![CDATA[libreoffice --math]]></command></action></item>
+    <item label="LibreOffice Writer"><action name="Execute"><command><![CDATA[libreoffice --writer]]></command></action></item>
+    <item label="LibreOffice"><action name="Execute"><command><![CDATA[libreoffice]]></command></action></item>
+  </menu>
+  <menu id="0.509546738254667" label="Settings">
+    <item label="Accessibility"><action name="Execute"><command><![CDATA[xfce4-accessibility-settings]]></command></action></item>
+    <item label="Advanced Network Configuration"><action name="Execute"><command><![CDATA[nm-connection-editor]]></command></action></item>
+    <item label="Anthy Dictionary editor"><action name="Execute"><command><![CDATA[kasumi]]></command></action></item>
+    <item label="Appearance"><action name="Execute"><command><![CDATA[xfce4-appearance-settings]]></command></action></item>
+    <item label="Customize Look and Feel"><action name="Execute"><command><![CDATA[lxappearance]]></command></action></item>
+    <item label="Desktop Preferences"><action name="Execute"><command><![CDATA[pcmanfm --desktop-pref]]></command></action></item>
+    <item label="Desktop"><action name="Execute"><command><![CDATA[xfdesktop-settings]]></command></action></item>
+    <item label="Display"><action name="Execute"><command><![CDATA[xfce4-display-settings]]></command></action></item>
+    <item label="Fcitx Configuration"><action name="Execute"><command><![CDATA[fcitx-configtool]]></command></action></item>
+    <item label="File Manager"><action name="Execute"><command><![CDATA[thunar-settings]]></command></action></item>
+    <item label="IBus Preferences"><action name="Execute"><command><![CDATA[ibus-setup]]></command></action></item>
+    <item label="Input Method"><action name="Execute"><command><![CDATA[im-config]]></command></action></item>
+    <item label="Input Method"><action name="Execute"><command><![CDATA[uim-pref-gtk]]></command></action></item>
+    <item label="Keyboard"><action name="Execute"><command><![CDATA[xfce4-keyboard-settings]]></command></action></item>
+    <item label="MIME Type Editor"><action name="Execute"><command><![CDATA[xfce4-mime-settings]]></command></action></item>
+    <item label="Mouse and Touchpad"><action name="Execute"><command><![CDATA[xfce4-mouse-settings]]></command></action></item>
+    <item label="Mozc Setup"><action name="Execute"><command><![CDATA[/usr/lib/mozc/mozc_tool --mode=config_dialog]]></command></action></item>
+    <item label="Notifications"><action name="Execute"><command><![CDATA[xfce4-notifyd-config]]></command></action></item>
+    <item label="Openbox Configuration Manager"><action name="Execute"><command><![CDATA[obconf]]></command></action></item>
+    <item label="Panel"><action name="Execute"><command><![CDATA[xfce4-panel --preferences]]></command></action></item>
+    <item label="Power Manager"><action name="Execute"><command><![CDATA[xfce4-power-manager-settings]]></command></action></item>
+    <item label="Preferred Applications"><action name="Execute"><command><![CDATA[exo-preferred-applications]]></command></action></item>
+    <item label="Print Settings"><action name="Execute"><command><![CDATA[system-config-printer]]></command></action></item>
+    <item label="Removable Drives and Media"><action name="Execute"><command><![CDATA[thunar-volman-settings]]></command></action></item>
+    <item label="Session and Startup"><action name="Execute"><command><![CDATA[xfce4-session-settings]]></command></action></item>
+    <item label="Settings Editor"><action name="Execute"><command><![CDATA[xfce4-settings-editor]]></command></action></item>
+    <item label="Settings Manager"><action name="Execute"><command><![CDATA[xfce4-settings-manager]]></command></action></item>
+    <item label="Synaptic Package Manager"><action name="Execute"><command><![CDATA[synaptic-pkexec]]></command></action></item>
+    <item label="Tint2 Settings"><action name="Execute"><command><![CDATA[tint2conf]]></command></action></item>
+    <item label="Window Manager Tweaks"><action name="Execute"><command><![CDATA[xfwm4-tweaks-settings]]></command></action></item>
+    <item label="Window Manager"><action name="Execute"><command><![CDATA[xfwm4-settings]]></command></action></item>
+    <item label="Workspaces"><action name="Execute"><command><![CDATA[xfwm4-workspace-settings]]></command></action></item>
+    <item label="Xfce Terminal"><action name="Execute"><command><![CDATA[xfce4-terminal --preferences]]></command></action></item>
+  </menu>
+  <menu id="0.312165705062476" label="System">
+    <item label="Bulk Rename"><action name="Execute"><command><![CDATA[/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename]]></command></action></item>
+    <item label="Fcitx"><action name="Execute"><command><![CDATA[fcitx]]></command></action></item>
+    <item label="File Manager PCManFM"><action name="Execute"><command><![CDATA[pcmanfm]]></command></action></item>
+    <item label="Log Out"><action name="Execute"><command><![CDATA[xfce4-session-logout]]></command></action></item>
+    <item label="Multilingual Terminal"><action name="Execute"><command><![CDATA[mlterm]]></command></action></item>
+    <item label="Print Settings"><action name="Execute"><command><![CDATA[system-config-printer]]></command></action></item>
+    <item label="Sensor Viewer"><action name="Execute"><command><![CDATA[xfce4-sensors]]></command></action></item>
+    <item label="Synaptic Package Manager"><action name="Execute"><command><![CDATA[synaptic-pkexec]]></command></action></item>
+    <item label="Task Manager"><action name="Execute"><command><![CDATA[xfce4-taskmanager]]></command></action></item>
+    <item label="Terminator"><action name="Execute"><command><![CDATA[terminator]]></command></action></item>
+    <item label="Thai X terminal"><action name="Execute"><command><![CDATA[txiterm -ls -cursorColor yellow -cursorColorThai red -bg black -fg white]]></command></action></item>
+    <item label="Thunar File Manager"><action name="Execute"><command><![CDATA[thunar]]></command></action></item>
+    <item label="Tint2"><action name="Execute"><command><![CDATA[tint2]]></command></action></item>
+    <item label="UXTerm"><action name="Execute"><command><![CDATA[uxterm]]></command></action></item>
+    <item label="Xfce Terminal"><action name="Execute"><command><![CDATA[xfce4-terminal]]></command></action></item>
+    <item label="XTerm"><action name="Execute"><command><![CDATA[xterm]]></command></action></item>
+  </menu>
+  <separator/>
+  <menu id="0.332898027022029" label="Advanced Settings">
+    <item label="Conky RC"><action name="Execute"><command><![CDATA[geany ~/.conkyrc]]></command></action></item>
+    <item label="Tint2 Panel"><action name="Execute"><command><![CDATA[geany ~/.config/tint2/tint2rc]]></command></action></item>
+  <menu id="0.51933584577705" label="Obmenu-Generator">
+    <item label="Menu Schema"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/schema.pl]]></command></action></item>
+    <item label="Menu Config"><action name="Execute"><command><![CDATA[geany ~/.config/obmenu-generator/config.pl]]></command></action></item>
+  <separator/>
+    <item label="Generate a static menu"><action name="Execute"><command><![CDATA[obmenu-generator -s -c]]></command></action></item>
+    <item label="Generate a static menu with icons"><action name="Execute"><command><![CDATA[obmenu-generator -s -i -c]]></command></action></item>
+  <separator/>
+    <item label="Generate a dynamic menu"><action name="Execute"><command><![CDATA[obmenu-generator -p]]></command></action></item>
+    <item label="Generate a dynamic menu with icons"><action name="Execute"><command><![CDATA[obmenu-generator -p -i]]></command></action></item>
+  <separator/>
+    <item label="Refresh cache"><action name="Execute"><command><![CDATA[obmenu-generator -d]]></command></action></item>
+  </menu>
+  <menu id="0.922247304830119" label="Openbox">
+    <item label="Openbox Autostart"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/autostart]]></command></action></item>
+    <item label="Openbox RC"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/rc.xml]]></command></action></item>
+    <item label="Openbox Menu"><action name="Execute"><command><![CDATA[geany ~/.config/openbox/menu.xml]]></command></action></item>
+    <item label="Reconfigure Openbox"><action name="Execute"><command><![CDATA[openbox --reconfigure]]></command></action></item>
+  </menu>
+  </menu>
+  <separator/>
+    <item label="Lock"><action name="Execute"><command><![CDATA[xscreensaver-command -lock]]></command></action></item>
+    <item label="Exit"><action name="Exit"/></item>
+  </menu>
+</openbox_menu>
